@@ -68,7 +68,7 @@ void groundfilter_tin(const std::vector<Point>& pointcloud, const json& jparams)
         std::cout << pointcloud[i][0] << std::endl;
     }
 
-    // Find MIN_MAX values
+    // Find the bounding box
     std::set<double> my_set_x;
     std::set<double> my_set_y;
     for(const auto & i : pointcloud){
